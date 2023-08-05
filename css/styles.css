@@ -86,6 +86,8 @@ ul {
 }
 
 .main-order-service {
+  background-image: url(../images/people-office.jpg);
+  background-size: 1440;
   background: var(--navyblue, #2e2f42);
   text-align: center;
   padding: 188px 0;
