@@ -301,6 +301,12 @@ nav {
   background-color: var(--pressed-state, #404bbf);
 }
 
+.icon-media-round {
+  border-radius: 50%;
+  padding: 12px;
+  background-color: var(--primary-brand, #4d5ae5);
+}
+
 .main-team-media {
   display: flex;
   align-items: center;
@@ -451,6 +457,10 @@ nav {
 .footer-media-icons {
   display: flex;
   gap: 16px;
+}
+
+.footer-media-icons li {
+  border-radius: 50%;
 }
 
 .footer-media-text {
