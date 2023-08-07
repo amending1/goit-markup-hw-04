@@ -42,15 +42,11 @@ a:focus {
   color: var(--pressed-state, #404bbf);
 }
 
-svg:hover,
-:focus {
-  cursor: pointer;
-}
-
 :root {
   --primary-brand: #4d5ae5;
   --pressed-state: #404bbf;
   --dark: #2e2f42;
+  --success: #31d0aa;
   --text: #434455;
   --subtle-text: #8e8f99;
   --accent: #e7e9fc;
@@ -68,6 +64,10 @@ svg:hover,
 
 header {
   border-bottom: 1px solid #e7e9fc;
+}
+
+address {
+  margin-left: auto;
 }
 
 .header-wrapper {
@@ -101,10 +101,13 @@ ul {
     ),
     url(../images/people-office.jpg);
   background-color: var(--dark, #2e2f42);
-  background-size: 1440px;
-  background-color: var(--dark, #2e2f42);
+  background-size: cover;
+  background-repeat: no-repeat;
   text-align: center;
   padding: 188px 0;
+  max-width: 1440px;
+  height: 600px;
+  margin: 0 auto;
 }
 
 .main-order-service-text {
@@ -203,6 +206,20 @@ nav {
   gap: 24px;
 }
 
+.main-content-icons {
+  height: 112px;
+  border-radius: 4px;
+  background-color: var(--light, #f4f4fd);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.main-content-icons-items {
+  width: 64px;
+  height: 64px;
+}
+
 .main-content-images {
   display: flex;
   justify-content: space-between;
@@ -218,6 +235,7 @@ nav {
   line-height: 1.2;
   letter-spacing: 0.4px;
   margin-bottom: 8px;
+  margin-top: 8px;
 }
 
 .main-content-items {
@@ -273,13 +291,20 @@ nav {
   margin-bottom: 8px;
 }
 
-.main-team-media > svg {
-  width: 40px;
-  height: 40px;
+.main-team-media-items {
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-brand, #4d5ae5);
+}
+
+.main-team-media-items:hover {
+  background-color: var(--pressed-state, #404bbf);
 }
 
 .main-team-media {
   display: flex;
+  align-items: center;
+  justify-content: center;
   gap: 24px;
 }
 
@@ -413,12 +438,17 @@ nav {
   display: block;
 }
 
-.footer-media-items svg {
-  width: 40px;
-  height: 40px;
+.footer-media-items {
+  width: 16px;
+  height: 16px;
+  background-color: var(--primary-brand, #4d5ae5);
 }
 
-.footer-media-items {
+.footer-media-items:hover {
+  background-color: var(--success, #31d0aa);
+}
+
+.footer-media-icons {
   display: flex;
   gap: 16px;
 }
