@@ -425,7 +425,8 @@ nav {
 
 .customers-items:hover,
 :focus {
-  background-color: var(--pressed-state, #404bbf);
+  fill: var(--pressed-state, #404bbf);
+  border: 1px solid var(--pressed-state, #404bbf);
 }
 
 .footer-wrapper {
