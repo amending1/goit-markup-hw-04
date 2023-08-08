@@ -300,7 +300,6 @@ nav {
 .main-team-media-items {
   width: 16px;
   height: 16px;
-  background-color: var(--primary-brand, #4d5ae5);
 }
 
 .main-team-media-items:hover {
