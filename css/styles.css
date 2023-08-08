@@ -401,13 +401,11 @@ nav {
 .button-portfolio:hover {
   background: var(--pressed-state, #404bbf);
   color: var(--white-background, #fff);
-  border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
 
 .button-portfolio:focus {
-  border: 1px solid transparent;
   box-shadow: 0px 2px 2px 0px rgba(0, 0, 0, 0.12),
     0px 2px 1px 0px rgba(0, 0, 0, 0.08), 0px 3px 1px 0px rgba(0, 0, 0, 0.1);
 }
@@ -427,9 +425,7 @@ nav {
 
 .customers-items:hover,
 :focus {
-  fill: var(--pressed-state, #404bbf);
-  border-radius: 4px;
-  border: 1px solid var(--pressed-state, #404bbf);
+  background-color: var(--pressed-state, #404bbf);
 }
 
 .footer-wrapper {
@@ -481,10 +477,6 @@ nav {
 
 .icon-media-round-footer:hover {
   background-color: var(--success, #31d0aa);
-}
-
-.footer-media-icons li {
-  border-radius: 50%;
 }
 
 .footer-media-text {
